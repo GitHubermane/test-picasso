@@ -1,7 +1,19 @@
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import { routes } from "routes";
 
-function App() {
-  return <div></div>;
-}
+const App = () => {
+  return (
+    <>
+      {routes.map(({ path, Component }) => (
+        <Routes key={path}>
+          <Route
+            path={path}
+            element={<Component />}
+          />
+        </Routes>
+      ))}
+    </>
+  );
+};
 
 export default App;
