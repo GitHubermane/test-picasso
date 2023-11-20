@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
 
 type PropsType = {
@@ -14,12 +15,12 @@ export const Row: FC<PropsType> = ({ id, body, title }) => {
       <div>{body}</div>
       <div>{title}</div>
       <div>
-        <button
+        <Link
+          to={`/post/${id}`}
           className={styles.row__btn}
-          onClick={() => {}}
         >
           Просмотр
-        </button>
+        </Link>
       </div>
     </div>
   );
