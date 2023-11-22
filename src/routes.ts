@@ -1,7 +1,7 @@
 import { Post, Posts } from "pages";
 
 export const POSTS_ROUTE = "/posts";
-export const POST_ROUTE = "/post/:id";
+export const POST_ROUTE = "/post/";
 
 type RoutesType = {
   path: string;
@@ -13,5 +13,5 @@ export const routes: RoutesType[] = [
     path: POSTS_ROUTE,
     Component: Posts,
   },
-  { path: POST_ROUTE, Component: Post },
+  { path: POST_ROUTE + ":id", Component: Post },
 ];

@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
+import { POST_ROUTE } from "routes";
 
 type PropsType = {
   id: number;
@@ -16,7 +17,7 @@ export const Row: FC<PropsType> = ({ id, body, title }) => {
       <div>{title}</div>
       <div>
         <Link
-          to={`/post/${id}`}
+          to={POST_ROUTE + id}
           className={styles.row__btn}
         >
           Просмотр
