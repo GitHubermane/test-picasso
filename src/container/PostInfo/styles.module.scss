@@ -1,0 +1,16 @@
+.post_info {
+  &__block {
+    display: flex;
+    margin-bottom: 20px;
+
+    & > div {
+      margin-right: 20px;
+    }
+  }
+
+  &__back_btn {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+}
