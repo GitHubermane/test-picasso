@@ -12,10 +12,12 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    &:nth-child(3) {
+      text-align: left;
+    }
   }
 
   :last-child:not(.row__btn) {
-    text-align: left;
     border-right: none;
   }
 
