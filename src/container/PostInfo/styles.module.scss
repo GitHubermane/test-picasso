@@ -1,4 +1,10 @@
+@import "src/assets/styles/variables.scss";
+
 .post_info {
+  background-color: $white;
+  padding: 20px;
+  border-radius: 10px;
+
   &__block {
     display: flex;
     margin-bottom: 20px;
@@ -9,7 +15,7 @@
   }
 
   &__back_btn {
-    background-color: #fff;
+    background-color: $white;
     border: none;
     cursor: pointer;
   }
