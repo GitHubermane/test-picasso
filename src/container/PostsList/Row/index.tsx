@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
-import styles from "./styles.module.scss";
 import { POST_ROUTE } from "routes";
+import styles from "./styles.module.scss";
 
 type PropsType = {
   id: number;

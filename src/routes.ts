@@ -13,5 +13,5 @@ export const routes: RoutesType[] = [
     path: POSTS_ROUTE,
     Component: Posts,
   },
-  { path: POST_ROUTE + ":id", Component: Post },
+  { path: `${POST_ROUTE}:id`, Component: Post },
 ];
