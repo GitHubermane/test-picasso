@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+import { URLpath } from "config.ts";
+
 import { Provider } from "react-redux";
 import { store } from "store";
 
@@ -13,7 +15,7 @@ import "normalize.css";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename={URLpath}>
         <App />
       </BrowserRouter>
     </Provider>
